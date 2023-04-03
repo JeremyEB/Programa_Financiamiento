@@ -1,0 +1,22 @@
+.titulo{
+    text-align:center;
+}
+
+form{
+    width:50%;
+    margin:auto;
+}
+
+.form-2{
+    width:30%;
+    margin:auto;
+}
+
+label{
+    font-weight:bold;
+}
+
+.modal-body{
+    width:50%;
+    margin:auto;
+}

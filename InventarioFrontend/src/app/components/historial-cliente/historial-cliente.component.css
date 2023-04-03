@@ -1,0 +1,22 @@
+.Botones{
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.container-texto{
+    text-align:center;
+}
+
+.container-input{
+    width:40%;
+    margin:auto;
+}
+
+.container-table{
+    width:100%;
+    margin:auto;
+}
+
+ng-template {
+    width:80%;
+}

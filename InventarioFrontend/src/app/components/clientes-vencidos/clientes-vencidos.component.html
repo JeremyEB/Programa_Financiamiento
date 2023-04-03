@@ -1,0 +1,37 @@
+<app-header2></app-header2>
+<div class="container">
+    <div class="texto_Titulo">
+        <h2>Clientes Vencidos</h2>
+    </div>
+    <div class="container">
+        <div class="container-input">
+            <input type="date" class="form-control" [formControl]="control">
+        </div>
+        <div class="container-table">
+            <h3>Clientes Vencidos</h3>
+            <table class="table table-hover table-bordered table-sm">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Monto Solicitado</th>
+                        <th>Cuotas</th>
+                        <th>Cuotas Menusales</th>
+                        <th>ID Factura</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let fecha_Factura of facturas">
+                        <th>{{fecha_Factura.Nombre_Apellido}}</th>
+                        <th>{{fecha_Factura.Monto_Solicitado}}</th>
+                        <th>{{fecha_Factura.Cuotas}}</th>
+                        <th>{{fecha_Factura.Cuotas_Mensuales}}</th>
+                        <th>{{fecha_Factura.Factura_ID}}</th>
+                        <th>{{fecha_Factura.Fecha}}</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
